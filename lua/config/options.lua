@@ -3,3 +3,4 @@
 -- Add any additional options here
 -- vim.opt.wrap = true
 -- vim.g.lazyvim_prettier_needs_config = false
+-- vim.g.lazyvim_php_lsp = "intelephense"
