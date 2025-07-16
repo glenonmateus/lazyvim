@@ -6,9 +6,7 @@ return {
     dependencies = { "V13Axel/neotest-pest" },
     opts = {
       adapters = {
-        ["neotest-pest"] = {
-          results_path = "/tmp/pest",
-        },
+        ["neotest-pest"] = {},
       },
     },
   },
