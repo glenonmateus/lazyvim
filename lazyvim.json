@@ -22,7 +22,6 @@
     "lazyvim.plugins.extras.lsp.none-ls",
     "lazyvim.plugins.extras.test.core",
     "lazyvim.plugins.extras.ui.treesitter-context",
-    "lazyvim.plugins.extras.util.dot",
     "lazyvim.plugins.extras.vscode"
   ],
   "install_version": 7,
