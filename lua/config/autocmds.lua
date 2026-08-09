@@ -18,3 +18,16 @@ vim.api.nvim_create_autocmd({ "BufEnter", "CursorHold", "CursorHoldI", "FocusGai
     end
   end,
 })
+
+vim.api.nvim_create_autocmd({ "BufWritePre" }, {
+  desc = "Exit active mini.snippets session on save",
+  callback = function()
+    -- Check if mini.snippets is loaded and has an active session
+    if package.loaded["mini.snippets"] then
+      local MiniSnippets = require("mini.snippets")
+      if MiniSnippets.session.get() ~= nil then
+        MiniSnippets.session.stop()
+      end
+    end
+  end,
+})
