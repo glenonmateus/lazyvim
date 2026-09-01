@@ -1,6 +1,6 @@
 return {
   "folke/which-key.nvim",
   opts = {
-    preset = "helix",
+    preset = "modern", -- helix, classic, modern
   },
 }
